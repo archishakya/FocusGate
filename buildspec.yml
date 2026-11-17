@@ -1,0 +1,22 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      java: corretto21
+    commands:
+      - export ANDROID_HOME=$HOME/android-sdk
+      - mkdir -p $ANDROID_HOME/cmdline-tools
+      - curl -so tools.zip https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+      - unzip -q tools.zip -d $ANDROID_HOME/cmdline-tools
+      - mv $ANDROID_HOME/cmdline-tools/cmdline-tools $ANDROID_HOME/cmdline-tools/latest
+      - yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses > /dev/null
+      - $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"
+  build:
+    commands:
+      - echo "sdk.dir=$HOME/android-sdk" > local.properties
+      - chmod +x gradlew
+      - ./gradlew testDebugUnitTest assembleDebug
+artifacts:
+  files:
+    - app/build/outputs/apk/debug/*.apk
+  discard-paths: yes
