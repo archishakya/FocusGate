@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.focusgate.core.ZoneEvaluatorTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-10-24T05:59:04" hostname="LAPTOP-E5MOM67O" time="0.004">
+  <properties/>
+  <testcase name="ambiguousDoesNotResetCommitted_butBreaksOutsideStreak" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.0"/>
+  <testcase name="carryOver_nineMinutes_kept_elevenMinutes_startsUnknown" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.0"/>
+  <testcase name="insideCountsUpTo30mAccuracy" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.0"/>
+  <testcase name="twoOutsideReadings_unblock_oneDoesNot" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.001"/>
+  <testcase name="multipleZones_anyInside" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.0"/>
+  <testcase name="thresholds" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.0"/>
+  <testcase name="carryOver_keepsInsideThroughHold_thenUnknown_andFreshReadingsFlip" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.0"/>
+  <testcase name="markUnavailable_failsOpenImmediately" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.0"/>
+  <testcase name="endToEnd_row5_zeroHome_blocked_row6_zeroOutside_allowed" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.0"/>
+  <testcase name="holdsLastStateUpToWindow_thenUnknown" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.0"/>
+  <testcase name="unusableReadingsIgnored" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.0"/>
+  <testcase name="confidentOutsideWithPoorFix" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.001"/>
+  <testcase name="singleInsideReading_commitsInside" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.0"/>
+  <testcase name="noUsableReading_staysUnknown" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.0"/>
+  <testcase name="clearCarryOver_startsUnknown" classname="app.focusgate.core.ZoneEvaluatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.focusgate.core.AuditFixTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T05:59:04" hostname="LAPTOP-E5MOM67O" time="0.049">
+  <properties/>
+  <testcase name="zonesRemovedWhileSampling_stopsLocation" classname="app.focusgate.core.AuditFixTest" time="0.033"/>
+  <testcase name="zoneChangeWhileSampling_restartsLocation_andRejectsStaleZoneReadings" classname="app.focusgate.core.AuditFixTest" time="0.011"/>
+  <testcase name="bothProvidersFail_failsOpen" classname="app.focusgate.core.AuditFixTest" time="0.002"/>
+  <testcase name="unknownDoesNotReleaseBlockedScreen" classname="app.focusgate.core.AuditFixTest" time="0.001"/>
+  <testcase name="blockedApp_releasedAfterTwoOutside_thenInsideBlocksAgainOnce" classname="app.focusgate.core.AuditFixTest" time="0.002"/>
+  <testcase name="multiZone_anyInsideBlocks_allOutsideReleases" classname="app.focusgate.core.AuditFixTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,6 @@
+<lint>
+    <!-- Sideloaded only, never on Play; targetSdk 34 deliberately matches the API 34 device -->
+    <issue id="ExpiredTargetSdkVersion" severity="ignore"/>
+    <issue id="ExpiringTargetSdkVersion" severity="ignore"/>
+    <issue id="OldTargetApi" severity="ignore"/>
+</lint>

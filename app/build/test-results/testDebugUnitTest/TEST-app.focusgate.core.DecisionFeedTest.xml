@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.focusgate.core.DecisionFeedTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-24T05:59:04" hostname="LAPTOP-E5MOM67O" time="0.0">
+  <properties/>
+  <testcase name="capacity50_dropsOldest_andClears" classname="app.focusgate.core.DecisionFeedTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

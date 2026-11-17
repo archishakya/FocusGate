@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "app.focusgate.app-debug-48:/xml_data_extraction_rules.xml.flat",
+        "source": "app.focusgate.app-main-50:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "app.focusgate.app-debug-48:/xml_backup_rules.xml.flat",
+        "source": "app.focusgate.app-main-50:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "app.focusgate.app-debug-48:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "app.focusgate.app-main-50:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "app.focusgate.app-debug-48:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "app.focusgate.app-main-50:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "app.focusgate.app-debug-48:/drawable_ic_stat_shield.xml.flat",
+        "source": "app.focusgate.app-main-50:/drawable/ic_stat_shield.xml"
+    }
+]

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.focusgate.core.EngineCoreTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-10-24T05:59:04" hostname="LAPTOP-E5MOM67O" time="0.017">
+  <properties/>
+  <testcase name="testBlocking_sixtySeconds_inconclusive" classname="app.focusgate.core.EngineCoreTest" time="0.002"/>
+  <testcase name="leavingZone_unblocks_returning_blocks" classname="app.focusgate.core.EngineCoreTest" time="0.001"/>
+  <testcase name="queryFloor_everyBeginAtOrAfterArmedAt_noExtraQueryForVerify" classname="app.focusgate.core.EngineCoreTest" time="0.001"/>
+  <testcase name="testBlocking_returningFirst_inconclusive" classname="app.focusgate.core.EngineCoreTest" time="0.001"/>
+  <testcase name="readFailed_accessRevoked_permissionLost_noErrorCounted" classname="app.focusgate.core.EngineCoreTest" time="0.0"/>
+  <testcase name="deferredReplay_waitsForInteractiveTick_andSkipsEmptyWindow" classname="app.focusgate.core.EngineCoreTest" time="0.0"/>
+  <testcase name="noZones_timesUp_mapsToNoZones_noLocation" classname="app.focusgate.core.EngineCoreTest" time="0.001"/>
+  <testcase name="readFailed_accessAllowed_failOpen_errorCounted_tenInARowDisarms" classname="app.focusgate.core.EngineCoreTest" time="0.001"/>
+  <testcase name="notificationDeleteIntent_repostOnNextTick" classname="app.focusgate.core.EngineCoreTest" time="0.0"/>
+  <testcase name="persistCadence_crossingZero_and15s" classname="app.focusgate.core.EngineCoreTest" time="0.002"/>
+  <testcase name="testBlocking_firesOnlyWhenAllConditionsHold_thenPasses" classname="app.focusgate.core.EngineCoreTest" time="0.001"/>
+  <testcase name="singleInsideReading_blocks_twoOutsideReadings_unblock" classname="app.focusgate.core.EngineCoreTest" time="0.001"/>
+  <testcase name="warmStart_samplingBeginsAtTwoMinutesLeft_notBefore" classname="app.focusgate.core.EngineCoreTest" time="0.002"/>
+  <testcase name="screenOff_persistsAndStopsSampling" classname="app.focusgate.core.EngineCoreTest" time="0.001"/>
+  <testcase name="lostStopped_blockedShown_noRelaunch_noFurtherAccrual_newResumedBlocksAgain" classname="app.focusgate.core.EngineCoreTest" time="0.0"/>
+  <testcase name="warmStart_gateClosed_zeroLocationCalls" classname="app.focusgate.core.EngineCoreTest" time="0.0"/>
+  <testcase name="testBlocking_waitsForOwnActivityGrace" classname="app.focusgate.core.EngineCoreTest" time="0.0"/>
+  <testcase name="testBlocking_notResumedWithin3s_failed" classname="app.focusgate.core.EngineCoreTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

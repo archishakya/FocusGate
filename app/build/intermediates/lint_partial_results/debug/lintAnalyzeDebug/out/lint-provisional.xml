@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.7.3" type="conditional_incidents">
+
+    <incident
+        id="InlinedApi"
+        severity="warning"
+        message="">
+        <fix-data minSdk="fffffffff0000000" requiresApi="ffffffff00000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/app/focusgate/ui/components/Components.kt"
+            line="102"
+            column="72"
+            startOffset="4217"
+            endLine="102"
+            endColumn="110"
+            endOffset="4255"/>
+        <map>
+            <entry
+                name="message"
+                string="Field requires API level 33 (current min is %1$s): `android.Manifest.permission#POST_NOTIFICATIONS`"/>
+            <api-levels id="minSdk"
+                value="fffffffff0000000"/>
+            <entry
+                name="name"
+                string="POST_NOTIFICATIONS"/>
+            <entry
+                name="owner"
+                string="android.Manifest.permission"/>
+            <api-levels id="requiresApi"
+                value="ffffffff00000000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="InlinedApi"
+        severity="warning"
+        message="">
+        <fix-data minSdk="fffffffff0000000" requiresApi="ffffffffc0000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/app/focusgate/location/GpsSource.kt"
+            line="208"
+            column="24"
+            startOffset="8898"
+            endLine="208"
+            endColumn="54"
+            endOffset="8928"/>
+        <map>
+            <entry
+                name="message"
+                string="Field requires API level 31 (current min is %1$s): `android.location.LocationManager#FUSED_PROVIDER`"/>
+            <api-levels id="minSdk"
+                value="fffffffff0000000"/>
+            <entry
+                name="name"
+                string="FUSED_PROVIDER"/>
+            <entry
+                name="owner"
+                string="android.location.LocationManager"/>
+            <api-levels id="requiresApi"
+                value="ffffffffc0000000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NotificationPermission"
+        severity="error"
+        message="When targeting Android 13 or higher, posting a permission requires holding the `POST_NOTIFICATIONS` permission">
+        <fix-data missing="android.permission.POST_NOTIFICATIONS"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/app/focusgate/service/Notifications.kt"
+            line="129"
+            column="13"
+            startOffset="5422"
+            endLine="129"
+            endColumn="62"
+            endOffset="5471"/>
+    </incident>
+
+    <incident
+        id="LockedOrientationActivity"
+        severity="warning"
+        message="Expecting `android:screenOrientation=&quot;unspecified&quot;` or `&quot;fullSensor&quot;` for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices">
+        <fix-attribute
+            description="Set screenOrientation=&quot;fullSensor&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="screenOrientation"
+            value="fullSensor"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="36"
+            column="45"
+            startOffset="1962"
+            endLine="36"
+            endColumn="81"
+            endOffset="1998"/>
+        <map>
+            <condition library="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LockedOrientationActivity"
+        severity="warning"
+        message="Expecting `android:screenOrientation=&quot;unspecified&quot;` or `&quot;fullSensor&quot;` for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices">
+        <fix-attribute
+            description="Set screenOrientation=&quot;fullSensor&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="screenOrientation"
+            value="fullSensor"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="47"
+            column="13"
+            startOffset="2534"
+            endLine="47"
+            endColumn="49"
+            endOffset="2570"/>
+        <map>
+            <condition library="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 34">
+        <fix-replace
+            description="Delete tools:targetApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+                startOffset="1821"
+                endOffset="1841"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="33"
+            column="9"
+            startOffset="1821"
+            endLine="33"
+            endColumn="29"
+            endOffset="1841"/>
+        <map>
+            <condition minGE="fffffffe00000000"/>
+        </map>
+    </incident>
+
+</incidents>

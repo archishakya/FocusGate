@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.focusgate.core.ServiceStartTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-10-24T05:59:04" hostname="LAPTOP-E5MOM67O" time="0.008">
+  <properties/>
+  <testcase name="panic_disarms_stops_notSticky_noEngine" classname="app.focusgate.core.ServiceStartTest" time="0.003"/>
+  <testcase name="notifDismissed_withoutEngine_stopsStrayInstance" classname="app.focusgate.core.ServiceStartTest" time="0.0"/>
+  <testcase name="testBlock_withoutEngine_stopsStrayInstance" classname="app.focusgate.core.ServiceStartTest" time="0.0"/>
+  <testcase name="start_gateOpen_success_createsEngineAfterStartForeground" classname="app.focusgate.core.ServiceStartTest" time="0.001"/>
+  <testcase name="degradedEngine_start_securityException_staysDegraded" classname="app.focusgate.core.ServiceStartTest" time="0.0"/>
+  <testcase name="nullIntent_securityException_retriesDegraded" classname="app.focusgate.core.ServiceStartTest" time="0.001"/>
+  <testcase name="nullIntent_crashLoopTrips_disarms_noEngine" classname="app.focusgate.core.ServiceStartTest" time="0.0"/>
+  <testcase name="nullIntent_gateOpen_recordsOneUncleanRestart_thenStarts" classname="app.focusgate.core.ServiceStartTest" time="0.0"/>
+  <testcase name="nullIntent_gateClosed_stops" classname="app.focusgate.core.ServiceStartTest" time="0.0"/>
+  <testcase name="start_gateOpen_startForegroundThrows_noEngine" classname="app.focusgate.core.ServiceStartTest" time="0.001"/>
+  <testcase name="nullIntent_otherException_stopsWithoutDisarm_postsPaused" classname="app.focusgate.core.ServiceStartTest" time="0.0"/>
+  <testcase name="testBlock_and_notifDismissed_withEngine_forwarded" classname="app.focusgate.core.ServiceStartTest" time="0.0"/>
+  <testcase name="secondStart_withRunningEngine_noSecondEngine" classname="app.focusgate.core.ServiceStartTest" time="0.0"/>
+  <testcase name="start_gateClosed_minimalForeground_stop_noEngine" classname="app.focusgate.core.ServiceStartTest" time="0.0"/>
+  <testcase name="degradedEngine_start_repromotesWithLocation_noSecondEngine" classname="app.focusgate.core.ServiceStartTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

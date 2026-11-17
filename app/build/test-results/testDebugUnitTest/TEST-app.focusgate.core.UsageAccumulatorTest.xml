@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.focusgate.core.UsageAccumulatorTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2026-10-24T05:59:04" hostname="LAPTOP-E5MOM67O" time="0.012">
+  <properties/>
+  <testcase name="overlapRefeedingSameEvents_noDoubleCount" classname="app.focusgate.core.UsageAccumulatorTest" time="0.004"/>
+  <testcase name="eventsBeforeArmedAt_neverAccrued" classname="app.focusgate.core.UsageAccumulatorTest" time="0.0"/>
+  <testcase name="backwardTimeZoneChange_keepsCounters" classname="app.focusgate.core.UsageAccumulatorTest" time="0.0"/>
+  <testcase name="resumedDuringScreenOff_accruesOnlyFromScreenOn" classname="app.focusgate.core.UsageAccumulatorTest" time="0.001"/>
+  <testcase name="deferredReplay_setsOpenSinceToCursor" classname="app.focusgate.core.UsageAccumulatorTest" time="0.0"/>
+  <testcase name="rollover_noEventTickAfterMidnightResets" classname="app.focusgate.core.UsageAccumulatorTest" time="0.0"/>
+  <testcase name="dstDay_berlin_midnightSplitStillCorrect" classname="app.focusgate.core.UsageAccumulatorTest" time="0.001"/>
+  <testcase name="deferredReplay_skippedWhenWindowEmpty" classname="app.focusgate.core.UsageAccumulatorTest" time="0.0"/>
+  <testcase name="multiActivityHandoff_noGap" classname="app.focusgate.core.UsageAccumulatorTest" time="0.0"/>
+  <testcase name="queryBegin_neverBeforeArmedAt" classname="app.focusgate.core.UsageAccumulatorTest" time="0.0"/>
+  <testcase name="clockMovedBackwards_closesWithoutAccrual" classname="app.focusgate.core.UsageAccumulatorTest" time="0.0"/>
+  <testcase name="twoAppsInSequence" classname="app.focusgate.core.UsageAccumulatorTest" time="0.0"/>
+  <testcase name="singleSession_openAndClose" classname="app.focusgate.core.UsageAccumulatorTest" time="0.001"/>
+  <testcase name="markOwnUiShown_closesStaleSessions_andIgnoresRedeliveredResumed" classname="app.focusgate.core.UsageAccumulatorTest" time="0.0"/>
+  <testcase name="rollover_sessionAcrossMidnight_givesPostMidnightPartToToday" classname="app.focusgate.core.UsageAccumulatorTest" time="0.0"/>
+  <testcase name="screenOffClose_andResync" classname="app.focusgate.core.UsageAccumulatorTest" time="0.001"/>
+  <testcase name="stillOpen_accruesToNowEachTick_sumEqualsWallTime" classname="app.focusgate.core.UsageAccumulatorTest" time="0.0"/>
+  <testcase name="processDeath_noDoubleCount_noLoss" classname="app.focusgate.core.UsageAccumulatorTest" time="0.0"/>
+  <testcase name="dstDay_berlin_springForward" classname="app.focusgate.core.UsageAccumulatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
